@@ -9,7 +9,7 @@ const Store = require('electron-store');
 const settings = new Store({ name: 'Settings' });
 const log = require('electron-log');
 const splash = require('@trodi/electron-splashscreen');
-const config = require('./src/js/ws_config');
+const config = require('../src/js/ws_config');
 
 const IS_DEV = (process.argv[1] === 'dev' || process.argv[2] === 'dev');
 const IS_DEBUG = IS_DEV || process.argv[1] === 'debug' || process.argv[2] === 'debug';
